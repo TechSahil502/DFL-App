@@ -1,0 +1,13 @@
+invoice_no,invoice_date,order_reference,service,package_weight,package_length,package_breadth,package_height,currency_code,csb5_status,customer_shipping_firstname,customer_shipping_lastname,customer_shipping_mobile,customer_shipping_email,customer_shipping_company,customer_shipping_address,customer_shipping_address_2,customer_shipping_address_3,customer_shipping_city,customer_shipping_postcode,customer_shipping_country_code,customer_shipping_state,vendor_order_item_name,vendor_order_item_sku,vendor_order_item_quantity,vendor_order_item_unit_price,vendor_order_item_hsn,vendor_order_item_tax_rate,ioss_number,csbv5_limit_comfirmation
+INV2201254,08-08-2022,404-548-458,DFL EXPRESS - Economy,0.5,10,10,10,INR,1,John,Doe,19999999999,johndoe@gmail.com,,218W,37th Street,,New York,10001,US,NY,Cotton T-Shirts,CS123,5,499,63079099,5,,1
+INV2201254,08-08-2022,404-548-458,DFL EXPRESS - Economy,0.5,10,10,10,INR,0,John,Doe,19999999999,johndoe@gmail.com,,218W,37th Street,,New York,10001,US,NY,Cotton T-Shirts,CS123,5,499,63079099,12,,1
+INV2201256,08-08-2022,404-548-458,DFL EXPRESS - Economy,0.5,10,10,10,INR,1,John,Doe,19999999999,johndoe@gmail.com,,218W,37th Street,,New York,10001,US,NY,Cotton T-Shirts,CS123,5,499,63079099,18,,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Valid Values - REMOVE Blank and Non Order Rows Before Import,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Required,Required,,Required,Required,Required,Required,Required,Required,Required,Required,Required,Required,Required,,Required,Required,,Required,Required,Required,Required,Required,,Required,Required,Required,Required,Required,conditional required
+UNIQUE FOR DIFFERENT ORDERS SAME IF ADDING MULTIPLE ITEMS,YYYY-MM-DD,,DFL EXPRESS - Economy,In Kgs,In CM,In CM,In CM,INR,1 For CSB-V (Commercial Orders),,,Add ' Before Number to retain Format,,,,,,,,Check in Valid Values,Check in Valid Values,,,,,8 Digit HSN Code,0,Valid 10 Digit IOSS Number for EU,Required: If order is csb5 and  invoice value of all items in order exceeds Rs 1 Lakh  and is below Rs 10 Lakh
+,,,DFL EXPRESS - Standard,,,,,USD,TRUE  = 1,,,,,,,,,,,,,,,,,,5,,Not required: If order is  csb5 and invoice value is less than Rs 1 Lakh
+,,,DHL Export - Priority,,,,,EUR,FALSE = 0,,,,,,,,,,,,,,,,,,12,,"Not required: If order is  csb5 and invoice value is more than Rs 10 Lakh, but order will not be placed"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,18,,"Not required: If order is  csb4 and invoice value is more than Rs 25,000, but order will not be placed"
+,,,FedEx Export - Small Parcels,,,,,,,,,,,,,,,,,,,,,,,,28,,"Not required: If order is  csb4 and invoice value is less than Rs 25,000"
+,,,FedEx Export - Priority,,,,,,,,,,,,,,,,,,,,,,,,,,

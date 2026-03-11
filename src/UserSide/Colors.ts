@@ -1,0 +1,15 @@
+export const Colors = {
+    primary: '#e67e22',
+    background: '#f8f9fa',
+    sidebarBackground: '#f1f2f6',
+    white: '#ffffff',
+    text: '#2d3436',
+    textSecondary: '#636e72',
+    cardPurple: '#6c5ce7',
+    cardBlue: '#0984e3',
+    cardGreen: '#00b894',
+    cardOrange: '#e17055',
+    border: '#dfe6e9',
+    cancelled: '#ff7675',
+    resolved: '#55efc4',
+};
